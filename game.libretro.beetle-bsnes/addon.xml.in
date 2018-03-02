@@ -15,8 +15,8 @@
 		<supports_standalone>false</supports_standalone>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Nintendo - SNES / Famicom (Beetle bsnes) v0.9.26</summary>
-		<description>Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen&#39;s SNES module itself is a fork of bSNES v0.59.
+		<summary lang="en_GB">Nintendo - SNES / Famicom (Beetle bsnes) v0.9.26</summary>
+		<description lang="en_GB">Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen&#39;s SNES module itself is a fork of bSNES v0.59.
 
 Supported files: .smc, .fig, .bs, .st, .sfc</description>
 		<license>GPLv2</license>
