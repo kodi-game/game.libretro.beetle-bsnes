@@ -21,6 +21,7 @@
 Supported files: .smc, .fig, .bs, .st, .sfc</description>
 		<license>GPLv2</license>
 		<platform>@PLATFORM@</platform>
+		<source>https://github.com/kodi-game/game.libretro.beetle-bsnes</source>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<screenshot>resources/screenshot-01.jpg</screenshot>
