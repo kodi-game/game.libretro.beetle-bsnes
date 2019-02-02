@@ -1,0 +1,20 @@
+Source: kodi-game-libretro-beetle-bsnes
+Priority: extra
+Maintainer: wsnipex <wsnipex@a1.net>
+Build-Depends: debhelper (>= 9.0.0), cmake, kodi-addon-dev, libretro-beetle-bsnes
+Standards-Version: 3.9.8
+Section: libs
+
+Package: kodi-game-libretro-beetle-bsnes
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, kodi-game-libretro
+Description: Beetle-Bsnes core for kodi's retroplayer
+ Beetle-Bsnes core for kodi's retroplayer
+
+Package: kodi-game-libretro-beetle-bsnes-dbg
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Beetle-Bsnes core for kodi's retroplayer, debug symbols
+ debug symbols for Beetle-Bsnes core for kodi's retroplayer
