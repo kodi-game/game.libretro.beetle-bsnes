@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="game.libretro.beetle-bsnes"
-		name="Nintendo - SNES / Famicom (Beetle bsnes)"
+		name="Nintendo - SNES / SFC (Beetle bsnes)"
 		version="0.9.26.6"
 		provider-name="Libretro">
 	<requires>
@@ -15,7 +15,7 @@
 		<supports_standalone>false</supports_standalone>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Nintendo - SNES / Famicom (Beetle bsnes) v0.9.26</summary>
+		<summary lang="en_GB">Nintendo - SNES / SFC (Beetle bsnes) v0.9.26</summary>
 		<description lang="en_GB">Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen&#39;s SNES module itself is a fork of bSNES v0.59.
 
 Supported files: .smc, .fig, .bs, .st, .sfc</description>

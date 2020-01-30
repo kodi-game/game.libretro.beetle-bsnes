@@ -13,5 +13,5 @@ Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, kodi, kodi-game-libretro
 Enhances: kodi
-Description: Nintendo - SNES / Famicom (Beetle bsnes) core for kodi's retroplayer
- Nintendo - SNES / Famicom (Beetle bsnes) core for kodi's retroplayer
+Description: Nintendo - SNES / SFC (Beetle bsnes) core for kodi's retroplayer
+ Nintendo - SNES / SFC (Beetle bsnes) core for kodi's retroplayer
