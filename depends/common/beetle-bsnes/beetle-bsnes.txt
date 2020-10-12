@@ -1,1 +1,1 @@
-beetle-bsnes https://github.com/libretro/beetle-bsnes-libretro/archive/1c269db1d0c7857976efd9b8330ac217385765c8.zip
+beetle-bsnes https://github.com/libretro/beetle-bsnes-libretro/archive/0d6221a5fca708b36fa090d1c261663910d1e67e.zip
