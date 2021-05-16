@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="game.libretro.beetle-bsnes"
 		name="Nintendo - SNES / SFC (Beetle bsnes)"
-		version="0.9.26.11"
+		version="0.9.26.12"
 		provider-name="byuu, Mednafen Team">
 	<requires>
 		<import addon="game.libretro" version="1.0.0"/>
