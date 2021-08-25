@@ -15,9 +15,6 @@
 		<supports_standalone>false</supports_standalone>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Nintendo - SNES / SFC (Beetle bsnes) v0.9.26</summary>
-		<description lang="en_GB">Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen&#39;s SNES module itself is a fork of bSNES v0.59.</description>
-		<disclaimer>In loving memory of Near / Byuu</disclaimer>
 		<license>GPLv2</license>
 		<platform>@PLATFORM@</platform>
 		<source>https://github.com/kodi-game/game.libretro.beetle-bsnes</source>
@@ -27,5 +24,8 @@
 			<screenshot>resources/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshot-03.jpg</screenshot>
 		</assets>
+		<disclaimer>In loving memory of Near / Byuu</disclaimer>
+		<summary lang="en_GB">Nintendo - SNES / SFC (Beetle bsnes) v0.9.26</summary>
+		<description lang="en_GB">Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen&#39;s SNES module itself is a fork of bSNES v0.59.</description>
 	</extension>
 </addon>
