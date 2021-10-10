@@ -23,3 +23,7 @@ msgstr ""
 msgctxt "Addon Description"
 msgid "Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen&#39;s SNES module itself is a fork of bSNES v0.59."
 msgstr ""
+
+msgctxt "Addon Disclaimer"
+msgid "In loving memory of Near / Byuu"
+msgstr ""
