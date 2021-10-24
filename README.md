@@ -5,7 +5,7 @@
 
 ### Description
 
-Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen's SNES module itself is a fork of bSNES v0.59.
+Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen&apos;s SNES module itself is a fork of bSNES v0.59.
 
 ### License
 
