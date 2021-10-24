@@ -22,7 +22,7 @@ msgid "Nintendo - SNES / SFC (Beetle bsnes) v0.9.26"
 msgstr ""
 
 msgctxt "Addon Description"
-msgid "Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen's SNES module itself is a fork of bSNES v0.59."
+msgid "Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen\'s SNES module itself is a fork of bSNES v0.59."
 msgstr "Beetle bSNES 是 Beetle 的 SNES 模块，是 Mednafen 的一个分支。Mednafen 的 SNES 模块本身又是 bSNES v0.59 的一个分支。"
 
 msgctxt "Addon Disclaimer"
