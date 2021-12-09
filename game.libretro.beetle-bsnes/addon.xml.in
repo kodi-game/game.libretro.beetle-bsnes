@@ -32,6 +32,7 @@
 		<description lang="zh_CN">Beetle bSNES 是 Beetle 的 SNES 模块，是 Mednafen 的一个分支。Mednafen 的 SNES 模块本身又是 bSNES v0.59 的一个分支。</description>
 		<disclaimer lang="da_DK">I kærligt minde om Near / Byuu</disclaimer>
 		<disclaimer lang="en_GB">In loving memory of Near / Byuu</disclaimer>
+		<disclaimer lang="ko_KR">Near / Byuu의 사랑을 기억하며</disclaimer>
 		<disclaimer lang="zh_CN">怀念 Near / Byuu</disclaimer>
 	</extension>
 </addon>
