@@ -13,7 +13,7 @@ GPLv2
 
 ### Icon
 
-![Icon](game.libretro.beetle-bsnes/resources/icon.png)
+![Nintendo - SNES / SFC (Beetle bsnes) icon](game.libretro.beetle-bsnes/resources/icon.png)
 
 ### Fanart
 
@@ -21,9 +21,9 @@ Help make me fanart!
 
 ### Screenshots
 
-![Screenshot](game.libretro.beetle-bsnes/resources/screenshot-01.jpg)
-![Screenshot](game.libretro.beetle-bsnes/resources/screenshot-02.jpg)
-![Screenshot](game.libretro.beetle-bsnes/resources/screenshot-03.jpg)
+![Nintendo - SNES / SFC (Beetle bsnes) screenshot](game.libretro.beetle-bsnes/resources/screenshot-01.jpg)
+![Nintendo - SNES / SFC (Beetle bsnes) screenshot](game.libretro.beetle-bsnes/resources/screenshot-02.jpg)
+![Nintendo - SNES / SFC (Beetle bsnes) screenshot](game.libretro.beetle-bsnes/resources/screenshot-03.jpg)
 
 ### Disclaimer
 
