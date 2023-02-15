@@ -27,12 +27,14 @@
 		</assets>
 		<summary lang="en_GB">Nintendo - SNES / SFC (Beetle bsnes) v0.9.26</summary>
 		<description lang="da_DK">Beetle bSNES er SNES-modulet fra Beetle, en fork af Mednafen. Mednafens SNES-modul er i sig selv en fork af bSNES v0.59.</description>
+		<description lang="de_DE">Beetle bSNES ist das SNES-Modul von Beetle, einem Fork von Mednafen. Mednafens SNES-Modul selbst ist ein Fork von bSNES v0.59.</description>
 		<description lang="en_GB">Beetle bSNES is the SNES module of Beetle, a fork of Mednafen. Mednafen&apos;s SNES module itself is a fork of bSNES v0.59.</description>
 		<description lang="es_ES">Beetle bSNES es el módulo SNES de Beetle, una bifurcación de Mednafen. El propio módulo SNES de Mednafen es a su vez una bifurcación de bSNES v0.59.</description>
 		<description lang="it_IT">Beetle bSNES è il modulo SNES di Beetle, un fork di Mednafen. Lo stesso modulo SNES di Mednafen è un fork di bSNES v0.59.</description>
 		<description lang="ko_KR">비틀 bSNES는 Mednafen의 포크인 비틀의 SNES 모듈입니다. Mednafen의 SNES 모듈 자체는 bSNES v0.59의 포크입니다.</description>
 		<description lang="zh_CN">Beetle bSNES 是 Beetle 的 SNES 模块，是 Mednafen 的一个分支。Mednafen 的 SNES 模块本身又是 bSNES v0.59 的一个分支。</description>
 		<disclaimer lang="da_DK">I kærligt minde om Near / Byuu</disclaimer>
+		<disclaimer lang="de_DE">In liebevoller Erinnerung an Near / Byuu</disclaimer>
 		<disclaimer lang="en_GB">In loving memory of Near / Byuu</disclaimer>
 		<disclaimer lang="es_ES">En cariñoso recuerdo de Near / Byuu</disclaimer>
 		<disclaimer lang="it_IT">In amorevole ricordo di Near / Byuu</disclaimer>
