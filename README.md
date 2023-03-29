@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/kodi-game/game.libretro.beetle-bsnes.svg?branch=master)](https://travis-ci.org/kodi-game/game.libretro.beetle-bsnes)
-[![Build Status](https://ci.appveyor.com/api/projects/status/github/kodi-game/game.libretro.beetle-bsnes?svg=true)](https://ci.appveyor.com/project/kodi-game/game-libretro-beetle-bsnes)
-
 # Nintendo - SNES / SFC (Beetle bsnes)
 
 ### Description
