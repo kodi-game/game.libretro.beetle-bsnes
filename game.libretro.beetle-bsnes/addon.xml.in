@@ -25,6 +25,7 @@
 			<screenshot>resources/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshot-03.jpg</screenshot>
 		</assets>
+		<summary lang="da_DK">Nintendo - SNES / SFC (Beetle bsnes)</summary>
 		<summary lang="en_GB">Nintendo - SNES / SFC (Beetle bsnes)</summary>
 		<summary lang="es_ES">Nintendo - SNES / SFC (Beetle bsnes)</summary>
 		<description lang="da_DK">Beetle bSNES er SNES-modulet fra Beetle, en fork af Mednafen. Mednafens SNES-modul er i sig selv en fork af bSNES v0.59.</description>
