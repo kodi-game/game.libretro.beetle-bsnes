@@ -28,15 +28,24 @@ set(LIBRETRO_JNISONAME libretro${CMAKE_SHARED_LIBRARY_SUFFIX})
 
 if(CMAKE_BUILD_TYPE MATCHES Debug)
   set(LIBRETRO_DEBUG DEBUG=1)
+
+  # Disable LTO for Debug so DWARF survives and LLDB can step into the core
+  list(APPEND LIBRETRO_DEBUG LTO=)
 endif()
 
 if(CORE_SYSTEM_NAME STREQUAL windows)
   find_package(MinGW REQUIRED)
-  if(CPU STREQUAL arm64)
+
+  if(MINGW_MAKE MATCHES "/mingw64/")
     set(MSYSTEM MINGW64)
-  else()
+  elseif(MINGW_MAKE MATCHES "/mingw32/")
     set(MSYSTEM MINGW32)
+  else()
+    message(FATAL_ERROR "Unknown MinGW flavor in MINGW_MAKE: ${MINGW_MAKE}")
   endif()
+
+  message(STATUS "Using ${MSYSTEM} (from MINGW_MAKE='${MINGW_MAKE}')")
+
   set(BUILD_COMMAND ${MINGW_MAKE}
                     -C .
                     -f Makefile
