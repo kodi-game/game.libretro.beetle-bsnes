@@ -1,0 +1,67 @@
+From 2cf91e8d19a959c1b294927b308a63993e71442c Mon Sep 17 00:00:00 2001
+From: Garrett Brown <garrett.brown@aclima.earth>
+Date: Wed, 6 May 2026 04:45:31 -0700
+Subject: [PATCH] Fix strlcpy/strlcat fallback with glibc 2.38+
+
+glibc 2.38 added strlcpy() and strlcat(), so nall's fallback
+declarations and inline implementations now conflict with the libc
+versions on modern Linux systems.
+
+Guard the local nall fallback with __GLIBC_PREREQ(2, 38), while keeping
+the existing implementation available for older glibc versions and
+platforms that do not provide these functions.
+---
+ mednafen/snes/src/lib/nall/string/base.hpp | 8 ++++++++
+ mednafen/snes/src/lib/nall/string/strl.hpp | 4 ++++
+ 2 files changed, 12 insertions(+)
+
+diff --git a/mednafen/snes/src/lib/nall/string/base.hpp b/mednafen/snes/src/lib/nall/string/base.hpp
+index e5851b0..6ff2a04 100644
+--- a/mednafen/snes/src/lib/nall/string/base.hpp
++++ b/mednafen/snes/src/lib/nall/string/base.hpp
+@@ -9,6 +9,12 @@
+ #include <nall/utf8.hpp>
+ #include <nall/vector.hpp>
+ 
++#if defined(__GLIBC_PREREQ) && defined(__USE_MISC)
++  #define NALL_HAS_SYSTEM_STRLCPY_STRLCAT __GLIBC_PREREQ(2, 38)
++#else
++  #define NALL_HAS_SYSTEM_STRLCPY_STRLCAT 0
++#endif
++
+ inline char chrlower(char c);
+ inline char chrupper(char c);
+ inline int stricmp(const char *dest, const char *src);
+@@ -34,8 +40,10 @@ inline size_t strdouble  (char *str, double    value, size_t length = 0);
+ inline bool match(const char *pattern, const char *str);
+ inline bool strint (const char *str, int &result);
+ inline bool strmath(const char *str, int &result);
++#if !NALL_HAS_SYSTEM_STRLCPY_STRLCAT
+ inline size_t strlcpy(char *dest, const char *src, size_t length);
+ inline size_t strlcat(char *dest, const char *src, size_t length);
++#endif
+ inline char* ltrim(char *str, const char *key = " ");
+ inline char* rtrim(char *str, const char *key = " ");
+ inline char* trim (char *str, const char *key = " ");
+diff --git a/mednafen/snes/src/lib/nall/string/strl.hpp b/mednafen/snes/src/lib/nall/string/strl.hpp
+index 329e852..b6ba6ee 100644
+--- a/mednafen/snes/src/lib/nall/string/strl.hpp
++++ b/mednafen/snes/src/lib/nall/string/strl.hpp
+@@ -3,6 +3,8 @@
+ 
+ //strlcpy, strlcat based on OpenBSD implementation by Todd C. Miller
+ 
++#if !NALL_HAS_SYSTEM_STRLCPY_STRLCAT
++
+ //return = strlen(src)
+ size_t strlcpy(char *dest, const char *src, size_t length) {
+   char *d = dest;
+@@ -46,3 +48,5 @@ size_t strlcat(char *dest, const char *src, size_t length) {
+ }
+ 
+ #endif
++
++#endif
+-- 
+2.43.0
+
