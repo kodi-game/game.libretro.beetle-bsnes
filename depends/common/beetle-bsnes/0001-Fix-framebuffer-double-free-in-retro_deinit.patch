@@ -1,0 +1,33 @@
+From 3a37b333a9b1e0882d1a11965a85f883740d21ae Mon Sep 17 00:00:00 2001
+From: Garrett Brown <themagnificentmrb@gmail.com>
+Date: Thu, 29 Oct 2026 04:39:14 -0700
+Subject: [PATCH] Fix framebuffer double-free in retro_deinit
+
+Let MDFN_Surface's destructor release its owned framebuffer instead of
+freeing it before deleting the surface. This fixes shutdown for both
+WANT_32BPP and WANT_16BPP while preserving surface reset and logging.
+---
+ libretro.cpp | 7 -------
+ 1 file changed, 7 deletions(-)
+
+diff --git a/libretro.cpp b/libretro.cpp
+index 2f36194..84df139 100644
+--- a/libretro.cpp
++++ b/libretro.cpp
+@@ -392,13 +392,6 @@ void retro_deinit(void)
+ {
+    if (surf)
+    {
+-#if defined(WANT_32BPP)
+-      if (surf->pixels)
+-         free(surf->pixels);
+-#elif defined(WANT_16BPP)
+-      if (surf->pixels16)
+-         free(surf->pixels16);
+-#endif
+       delete surf;
+    }
+    surf = NULL;
+-- 
+2.54.0 (Apple Git-157)
+
